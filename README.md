@@ -1,34 +1,9 @@
-# What LLM to use? A perspective from the DevAI space
 
-With how fast things are moving in the DevAI space, a shorthand for the community of developers building software with the help of large language models (LLMs), it can be challenging to figure out which model to use.
+2023 CSV of LLMs [here](./LLMs.csv).
 
-We started this repository based on our experiences as part of the [Continue community](https://github.com/continuedev/continue). Feel free to suggest improvements and help us keep it up-to-date by opening a pull request!
+## Coding & Open Weights
 
-## What LLMs are there?
-
-There are A LOT of LLMs. We’ve decided to focus on the ones that we see folks using now:
-
-![LLMs graphic](LLMs.png)
-
-You can find a CSV that includes all of these models and information about them [here](./LLMs.csv).
-
-## What LLMs are being used while coding?
-
-### How do folks decide?
-
-The first choice you typically make is whether you are going to use an **open-source** or a **commercial** model:
-
-- You usually select an **open-source** LLM when you want to keep your code within your environment, have enough available memory, want to keep your costs low, or want to be able to manage and optimize everything end-to-end.
-- You usually select a **commercial** LLM when you want the best model, prefer an easy and reliable setup, don’t have a lot of available memory, don’t mind your code leaving your environment, or are not deterred by cost concerns.
-
-If you decide to use an **open-source** LLM, your next decision is whether to set up the model on your local machine or on a hosted model provider:
-
-- You usually opt to use an open-source LLM on your _local machine_ when you have enough available memory, want free usage, or want to be able to use the model without needing an Internet connection.
-- You usually opt to use an open-source LLM on a _hosted provider_ when you want the best open-source model, don’t have a lot of available memory on your local machine, or want the model to serve multiple people.
-
-We maintain a guide on how to deploy an open-source code LLM for your team [here](https://github.com/continuedev/deploy-os-code-llm).
-
-If you decide to use a **commercial** LLM, you'll typically obtain API keys and play with multiple of them for comparison. Both the quality of the suggestions and the cost to use can be important criteria.
+We maintain a guide on how to deploy an open-source code LLMs [here](https://github.com/continuedev/deploy-os-code-llm).
 
 ### Open Source
 
@@ -139,32 +114,3 @@ This is a list of the **open-source** LLMs that developers are using while codin
     
 </details>
 
-### Commercial
-
-This is a list of the **commercial** LLMs that developers are using while coding, roughly ordered from most popular to least popular, as of October 2023.
-
-#### 1. GPT-4
-
-[GPT-4](https://openai.com/research/gpt-4) from OpenAI is generally considered to be the best LLM to use while coding. It is quite helpful when generating and discussing code. However, it requires you to send your code to OpenAI via their API and can be quite expensive. Nevertheless, it is the most popular LLM for coding overall and the majority of developers use it while coding at this point. All OpenAI API users who made a successful payment of $1 or more before July 6, 2023 were given access to GPT-4, and they plan to open up access to all developers soon.
-
-#### 2. GPT-4 Turbo
-
-[GPT-4 Turbo](https://openai.com/blog/new-models-and-developer-products-announced-at-devday) from OpenAI is cheaper and faster than GPT-4. It has knowledge cutoff of April 2023 and has a 128k context window. It is currently in preview, as of November 2023, but anyone with an OpenAI API account and existing GPT-4 access can use it.
-
-#### 3. GPT-3.5 Turbo
-
-[GPT-3.5 Turbo](https://platform.openai.com/docs/models/gpt-3-5) from OpenAI is cheaper and faster than GPT-4; however, its suggestions are not nearly as helpful. It also requires you to send your code to OpenAI via their API. It is the second most popular LLM for coding overall so far. All developers can use it now after signing up for an OpenAI account.
-
-#### 4. Claude 2
-
-[Claude 2](https://www.anthropic.com/index/claude-2) is an LLM trained by Anthropic, which has greatly improved coding skills compared to the first version of Claude. It especially excels, relative to other LLMs, when you provide a lot of context. It requires you to send your code to Anthropic via their API. You must apply to get access to Claude 2 at this point.
-
-#### 5. PaLM 2
-
-[PaLM 2](https://ai.google/discover/palm2) is an LLM trained by Google. To try it out, you must send your code to Google via the PaLM API after obtaining an API key via MakerSuite, both of which are currently in public preview.
-
-## Contributing
-
-If you see a model missing or want to share an opinion, we welcome you to open a PR or an issue! We hope to maintain a community-driven and up-to-date index of the most helpful language models for coding.
-
-*If you liked this blog post and want to read more about DevAI–the community of folks building software with the help of LLMs–in the future, join our monthly newsletter [here](https://continue.dev#newsletter).*
