@@ -3,7 +3,6 @@
 
 ## Coding & Open Weights
 
-We maintain a guide on how to deploy an open-source code LLMs [here](https://github.com/continuedev/deploy-os-code-llm).
 
 ### Open Source
 
